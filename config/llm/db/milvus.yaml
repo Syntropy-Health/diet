@@ -1,0 +1,52 @@
+# Milvus Vector Database Configuration
+# Used by Amazon Store Agent for product search and similarity matching
+
+# Connection settings
+connection:
+  host: "localhost"
+  port: 19530
+  timeout: 30
+  secure: false
+
+# Database settings
+database:
+  name: "diet_insight_products"
+
+# Collection settings
+collections:
+  products:
+    name: "amazon_products"
+    dimension: 768  # Embedding dimension
+    metric_type: "COSINE"
+    index_type: "IVF_FLAT"
+    nlist: 16384
+
+  nutrition_profiles:
+    name: "nutrition_profiles"
+    dimension: 384
+    metric_type: "L2"
+    index_type: "IVF_SQ8"
+    nlist: 4096
+
+# Search settings
+search:
+  top_k: 50
+  nprobe: 16
+  search_timeout: 10
+
+# Index settings
+index:
+  build_timeout: 300
+  index_file_size: 1024  # MB
+
+# Performance tuning
+performance:
+  insert_buffer_size: 268435456  # 256MB
+  auto_flush_interval: 1  # seconds
+  max_idle_time: 3600  # 1 hour
+
+# Maintenance
+maintenance:
+  auto_compaction: true
+  compaction_interval: 300  # 5 minutes
+  retention_days: 30

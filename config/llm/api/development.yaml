@@ -1,0 +1,32 @@
+# Development API Configuration
+# Optimized for development and testing with cost-effective models
+
+provider: "openrouter"
+base_url: "https://openrouter.ai/api/v1"
+temperature: 0.2  # Slightly higher for varied responses in testing
+max_tokens: 2000  # Lower limit for cost savings
+request_timeout: 30
+max_retries: 2
+
+# API key loaded from OPENROUTER_API_KEY environment variable
+extra_headers:
+  HTTP-Referer: "https://syntropyhealth.ai"
+  X-Title: "SyntropyHealth Diet Insight Engine [DEV]"
+
+# Cost optimization for development
+cost_optimization:
+  prefer_free_models: true
+  token_limit_per_request: 2000
+  daily_token_limit: 50000
+
+# Fallback configuration
+fallback:
+  enabled: true
+  provider: "openai"
+  model: "gpt-3.5-turbo"
+
+# Development-specific settings
+development:
+  log_requests: true
+  save_responses: false
+  mock_mode: false

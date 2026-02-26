@@ -1,0 +1,361 @@
+[
+  {
+    "id": "diseased_entry_001",
+    "user_id": "patient_001",
+    "timestamp": "2025-06-15T08:00:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": null,
+    "symptoms": [
+      {
+        "name": "chronic_fatigue",
+        "severity": "severe",
+        "duration_hours": 168,
+        "description": "Persistent exhaustion despite 8+ hours of sleep",
+        "triggers": [
+          "physical activity",
+          "mental stress"
+        ]
+      },
+      {
+        "name": "shortness_of_breath",
+        "severity": "moderate",
+        "duration_hours": 72,
+        "description": "Difficulty breathing during mild physical activity",
+        "triggers": [
+          "climbing stairs",
+          "walking uphill"
+        ]
+      },
+      {
+        "name": "cold_hands_feet",
+        "severity": "moderate",
+        "duration_hours": 240,
+        "description": "Hands and feet constantly cold even in warm weather",
+        "triggers": [
+          "cold weather",
+          "stress"
+        ]
+      }
+    ],
+    "overall_wellness": 3,
+    "foods_consumed": [
+      {
+        "name": "white_toast",
+        "meal_type": "breakfast",
+        "calories": 200,
+        "serving_size": "2 slices",
+        "nutrients": {
+          "iron": 1.2,
+          "vitamin_c": 0.0,
+          "fiber": 2.0
+        },
+        "preparation_method": "toasted",
+        "notes": "With butter"
+      },
+      {
+        "name": "instant_noodles",
+        "meal_type": "lunch",
+        "calories": 380,
+        "serving_size": "1 package",
+        "nutrients": {
+          "sodium": 1400,
+          "iron": 2.0,
+          "fiber": 3.0
+        },
+        "preparation_method": "boiled",
+        "notes": "High sodium processed food"
+      }
+    ],
+    "water_intake_ml": 1200,
+    "sleep_hours": 9.0,
+    "exercise_minutes": 0,
+    "stress_level": 8,
+    "notes": "Feeling very weak and tired. Haven't been eating well lately."
+  },
+  {
+    "id": "diseased_entry_002",
+    "user_id": "patient_001",
+    "timestamp": "2025-06-16T09:30:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": null,
+    "symptoms": [
+      {
+        "name": "pale_skin",
+        "severity": "moderate",
+        "duration_hours": 336,
+        "description": "Noticeably pale complexion, especially around eyes",
+        "triggers": []
+      },
+      {
+        "name": "dizziness",
+        "severity": "moderate",
+        "duration_hours": 48,
+        "description": "Feeling lightheaded when standing up quickly",
+        "triggers": [
+          "standing up",
+          "sudden movements"
+        ]
+      },
+      {
+        "name": "brittle_nails",
+        "severity": "mild",
+        "duration_hours": 720,
+        "description": "Nails breaking easily and appearing thin",
+        "triggers": []
+      },
+      {
+        "name": "hair_loss",
+        "severity": "mild",
+        "duration_hours": 1440,
+        "description": "More hair than usual in shower drain",
+        "triggers": [
+          "washing hair"
+        ]
+      }
+    ],
+    "overall_wellness": 4,
+    "foods_consumed": [
+      {
+        "name": "cereal_with_milk",
+        "meal_type": "breakfast",
+        "calories": 250,
+        "serving_size": "1 bowl",
+        "nutrients": {
+          "iron": 18.0,
+          "vitamin_d": 40,
+          "calcium": 300
+        },
+        "preparation_method": "fortified cereal",
+        "notes": "Iron-fortified breakfast cereal"
+      },
+      {
+        "name": "tea_and_crackers",
+        "meal_type": "lunch",
+        "calories": 150,
+        "serving_size": "1 cup tea, 6 crackers",
+        "nutrients": {
+          "tannins": 50,
+          "iron": 0.5
+        },
+        "preparation_method": "brewed",
+        "notes": "Drinking tea with meals - iron inhibitor"
+      }
+    ],
+    "water_intake_ml": 800,
+    "sleep_hours": 10.0,
+    "exercise_minutes": 15,
+    "stress_level": 7,
+    "notes": "Still very tired despite extra sleep. Noticed pale appearance in mirror."
+  },
+  {
+    "id": "diseased_entry_003",
+    "user_id": "patient_001",
+    "timestamp": "2025-06-17T10:00:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": null,
+    "symptoms": [
+      {
+        "name": "restless_legs",
+        "severity": "moderate",
+        "duration_hours": 120,
+        "description": "Uncomfortable sensation in legs, need to move them",
+        "triggers": [
+          "sitting still",
+          "nighttime"
+        ]
+      },
+      {
+        "name": "ice_cravings",
+        "severity": "mild",
+        "duration_hours": 168,
+        "description": "Strong urge to chew ice cubes",
+        "triggers": [
+          "hot weather",
+          "stress"
+        ]
+      },
+      {
+        "name": "headaches",
+        "severity": "moderate",
+        "duration_hours": 96,
+        "description": "Recurring dull headaches, especially afternoon",
+        "triggers": [
+          "bright lights",
+          "stress"
+        ]
+      }
+    ],
+    "overall_wellness": 3,
+    "foods_consumed": [
+      {
+        "name": "coffee_and_donut",
+        "meal_type": "breakfast",
+        "calories": 320,
+        "serving_size": "1 large coffee, 1 glazed donut",
+        "nutrients": {
+          "caffeine": 200,
+          "sugar": 25,
+          "iron": 0.3
+        },
+        "preparation_method": "brewed coffee",
+        "notes": "High caffeine, low nutrition"
+      },
+      {
+        "name": "pizza_slice",
+        "meal_type": "lunch",
+        "calories": 285,
+        "serving_size": "1 large slice",
+        "nutrients": {
+          "iron": 2.5,
+          "vitamin_c": 5,
+          "calcium": 200
+        },
+        "preparation_method": "baked",
+        "notes": "Processed food with minimal nutrients"
+      }
+    ],
+    "water_intake_ml": 1000,
+    "sleep_hours": 8.5,
+    "exercise_minutes": 0,
+    "stress_level": 9,
+    "notes": "Strange ice cravings. Legs feel restless at night, hard to sleep."
+  },
+  {
+    "id": "diseased_entry_004",
+    "user_id": "patient_001",
+    "timestamp": "2025-06-18T11:15:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": null,
+    "symptoms": [
+      {
+        "name": "muscle_weakness",
+        "severity": "moderate",
+        "duration_hours": 192,
+        "description": "General muscle weakness, difficulty lifting objects",
+        "triggers": [
+          "physical exertion"
+        ]
+      },
+      {
+        "name": "mood_changes",
+        "severity": "moderate",
+        "duration_hours": 240,
+        "description": "Irritability and mood swings",
+        "triggers": [
+          "stress",
+          "fatigue"
+        ]
+      },
+      {
+        "name": "poor_concentration",
+        "severity": "severe",
+        "duration_hours": 168,
+        "description": "Difficulty focusing on tasks, brain fog",
+        "triggers": [
+          "mental tasks",
+          "fatigue"
+        ]
+      }
+    ],
+    "overall_wellness": 2,
+    "foods_consumed": [
+      {
+        "name": "energy_drink",
+        "meal_type": "breakfast",
+        "calories": 110,
+        "serving_size": "1 can",
+        "nutrients": {
+          "caffeine": 160,
+          "sugar": 27,
+          "b_vitamins": 100
+        },
+        "preparation_method": "canned",
+        "notes": "Trying to boost energy with caffeine"
+      },
+      {
+        "name": "fast_food_burger",
+        "meal_type": "lunch",
+        "calories": 540,
+        "serving_size": "1 burger",
+        "nutrients": {
+          "iron": 4.5,
+          "vitamin_c": 2,
+          "saturated_fat": 12
+        },
+        "preparation_method": "fried",
+        "notes": "High calories but poor nutrient quality"
+      }
+    ],
+    "water_intake_ml": 600,
+    "sleep_hours": 9.5,
+    "exercise_minutes": 0,
+    "stress_level": 9,
+    "notes": "Brain fog is getting worse. Can't focus on work. Feel very weak."
+  },
+  {
+    "id": "diseased_entry_005",
+    "user_id": "patient_001",
+    "timestamp": "2025-06-19T07:45:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": null,
+    "symptoms": [
+      {
+        "name": "rapid_heartbeat",
+        "severity": "moderate",
+        "duration_hours": 72,
+        "description": "Heart racing during minimal physical activity",
+        "triggers": [
+          "walking",
+          "climbing stairs"
+        ]
+      },
+      {
+        "name": "strange_food_cravings",
+        "severity": "mild",
+        "duration_hours": 120,
+        "description": "Craving non-food items like starch and ice",
+        "triggers": [
+          "stress",
+          "boredom"
+        ]
+      },
+      {
+        "name": "heavy_menstrual_bleeding",
+        "severity": "severe",
+        "duration_hours": 168,
+        "description": "Unusually heavy menstrual flow lasting longer than normal",
+        "triggers": []
+      }
+    ],
+    "overall_wellness": 2,
+    "foods_consumed": [
+      {
+        "name": "white_rice",
+        "meal_type": "lunch",
+        "calories": 205,
+        "serving_size": "1 cup",
+        "nutrients": {
+          "iron": 0.8,
+          "fiber": 0.6,
+          "carbohydrates": 45
+        },
+        "preparation_method": "boiled",
+        "notes": "Plain white rice - minimal nutrients"
+      },
+      {
+        "name": "ice_cubes",
+        "meal_type": "snack",
+        "calories": 0,
+        "serving_size": "2 cups",
+        "nutrients": {},
+        "preparation_method": "frozen",
+        "notes": "Compulsive ice eating - possible pica"
+      }
+    ],
+    "water_intake_ml": 2000,
+    "sleep_hours": 8.0,
+    "exercise_minutes": 0,
+    "stress_level": 8,
+    "notes": "Heart racing even when resting. Can't stop eating ice. Heavy period this month."
+  }
+]

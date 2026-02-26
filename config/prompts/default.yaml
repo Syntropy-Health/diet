@@ -1,0 +1,3 @@
+defaults:
+  - symptom_diet_solver
+  - _self_

@@ -1,0 +1,18 @@
+# Application Configuration - Development Environment
+
+service:
+  name: "Diet Insight Engine"
+  version: "0.2.0"
+  description: "AI-powered dietary insight and recommendation service"
+
+cors:
+  allow_origins:
+    - "http://localhost:3000"
+    - "http://localhost:8080"
+  allow_credentials: true
+  allow_methods: ["*"]
+  allow_headers: ["*"]
+
+error_handling:
+  include_stack_trace: false
+  problem_type_base_uri: "https://api.syntropy.health/problems"

@@ -1,0 +1,6 @@
+# Symptom Diet Solver Prompt Templates
+# Inherits from symptom_supplement_solver prompts
+
+defaults:
+  - symptom_supplement_solver
+  - _self_

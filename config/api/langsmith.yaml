@@ -1,0 +1,33 @@
+# LangSmith API Configuration
+# For observability and monitoring of LLM operations
+
+provider: "langsmith"
+tracing_enabled: true
+endpoint: "https://api.smith.langchain.com"
+project: "diet-insight-engine"
+
+# API key loaded from LANGSMITH_API_KEY environment variable
+
+# Runtime configuration
+run_id_prefix: "die"
+trace_sample_rate: 1.0
+session_name: "diet-insight-session"
+
+# Metadata
+metadata:
+  environment: "development"
+  version: "0.1.0"
+  component: "diet-insight-engine"
+
+# Tracing settings
+tracing:
+  capture_inputs: true
+  capture_outputs: true
+  capture_errors: true
+  include_run_metadata: true
+
+# Performance monitoring
+monitoring:
+  track_token_usage: true
+  track_latency: true
+  alert_on_errors: true

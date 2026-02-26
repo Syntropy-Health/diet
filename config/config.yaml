@@ -1,0 +1,26 @@
+# Diet Insight Engine - Main Configuration
+# Streamlined configuration focused on core pipeline needs
+
+defaults:
+  - _self_
+  - app: development
+  - llm: default
+  - llm/prompts
+  - api: langsmith  # Use modular langsmith config
+  - api@api_default: default  # Fallback/default API config
+  - pipeline: default
+  - logging: development
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+
+# Environment
+environment: development
+
+# Hydra configuration - simplified
+hydra:
+  mode: RUN
+  job:
+    chdir: false
+  run:
+    dir: output/${now:%Y-%m-%d_%H-%M-%S}

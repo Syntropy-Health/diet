@@ -1,0 +1,166 @@
+[
+  {
+    "id": "structured_001",
+    "user_id": "demo_user_456", 
+    "timestamp": "2025-06-18T08:30:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": 1.0,
+    "symptoms": [
+      {
+        "name": "fatigue",
+        "severity": "moderate",
+        "duration_hours": 12,
+        "description": "General tiredness and low energy",
+        "triggers": ["poor sleep", "stress"]
+      },
+      {
+        "name": "headache", 
+        "severity": "mild",
+        "duration_hours": 4,
+        "description": "Tension headache behind the eyes",
+        "triggers": ["dehydration", "stress"]
+      }
+    ],
+    "overall_wellness": 4,
+    "foods_consumed": [
+      {
+        "name": "scrambled eggs",
+        "quantity": "2 eggs",
+        "meal_type": "breakfast",
+        "calories": 150,
+        "macronutrients": {"protein": 12, "carbs": 1, "fat": 10},
+        "micronutrients": {"iron": 1.2, "vitamin_b12": 0.6}
+      },
+      {
+        "name": "whole wheat toast",
+        "quantity": "2 slices", 
+        "meal_type": "breakfast",
+        "calories": 160,
+        "macronutrients": {"protein": 6, "carbs": 30, "fat": 2},
+        "micronutrients": {"folate": 25, "iron": 1.8}
+      },
+      {
+        "name": "grilled chicken breast",
+        "quantity": "4 oz",
+        "meal_type": "dinner", 
+        "calories": 185,
+        "macronutrients": {"protein": 35, "carbs": 0, "fat": 4},
+        "micronutrients": {"niacin": 13.5, "selenium": 27}
+      }
+    ],
+    "water_intake_ml": 1600,
+    "sleep_hours": 5.0,
+    "exercise_minutes": 0,
+    "stress_level": 8,
+    "notes": "Feeling very stressed about work deadlines. Need to focus on better sleep hygiene."
+  },
+  {
+    "id": "structured_002",
+    "user_id": "demo_user_456",
+    "timestamp": "2025-06-17T09:15:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": 1.0,
+    "symptoms": [],
+    "overall_wellness": 8,
+    "foods_consumed": [
+      {
+        "name": "green smoothie",
+        "quantity": "16 oz",
+        "meal_type": "breakfast",
+        "calories": 280,
+        "macronutrients": {"protein": 25, "carbs": 35, "fat": 8},
+        "micronutrients": {"vitamin_c": 120, "folate": 80, "iron": 3.5}
+      },
+      {
+        "name": "mixed greens salad",
+        "quantity": "large bowl",
+        "meal_type": "lunch", 
+        "calories": 350,
+        "macronutrients": {"protein": 30, "carbs": 15, "fat": 18},
+        "micronutrients": {"vitamin_k": 150, "vitamin_a": 180, "folate": 60}
+      },
+      {
+        "name": "salmon fillet",
+        "quantity": "5 oz",
+        "meal_type": "dinner",
+        "calories": 275,
+        "macronutrients": {"protein": 39, "carbs": 0, "fat": 12},
+        "micronutrients": {"omega_3": 1.8, "vitamin_d": 360, "selenium": 40}
+      }
+    ],
+    "water_intake_ml": 2400,
+    "sleep_hours": 7.5,
+    "exercise_minutes": 30,
+    "stress_level": 3,
+    "notes": "Great day overall! The morning walk really helped my energy levels."
+  },
+  {
+    "id": "structured_003", 
+    "user_id": "demo_user_456",
+    "timestamp": "2025-06-16T19:45:00Z",
+    "raw_entry_id": null,
+    "parsing_confidence": 1.0,
+    "symptoms": [
+      {
+        "name": "severe fatigue",
+        "severity": "severe",
+        "duration_hours": 16,
+        "description": "Extreme tiredness and lack of energy",
+        "triggers": ["iron deficiency", "poor sleep"]
+      },
+      {
+        "name": "muscle aches",
+        "severity": "moderate", 
+        "duration_hours": 8,
+        "description": "General muscle soreness and weakness",
+        "triggers": ["nutrient deficiency"]
+      },
+      {
+        "name": "brittle nails",
+        "severity": "mild",
+        "duration_hours": null,
+        "description": "Fingernails breaking easily and looking pale",
+        "triggers": ["iron deficiency"]
+      },
+      {
+        "name": "hair loss",
+        "severity": "mild",
+        "duration_hours": null,
+        "description": "Increased hair shedding",
+        "triggers": ["nutrient deficiency", "stress"]
+      }
+    ],
+    "overall_wellness": 2,
+    "foods_consumed": [
+      {
+        "name": "coffee",
+        "quantity": "1 cup",
+        "meal_type": "breakfast",
+        "calories": 5,
+        "macronutrients": {"protein": 0, "carbs": 1, "fat": 0},
+        "micronutrients": {}
+      },
+      {
+        "name": "plain bagel",
+        "quantity": "1 whole",
+        "meal_type": "breakfast", 
+        "calories": 280,
+        "macronutrients": {"protein": 10, "carbs": 55, "fat": 2},
+        "micronutrients": {"folate": 20, "iron": 2.5}
+      },
+      {
+        "name": "chicken soup",
+        "quantity": "1 cup",
+        "meal_type": "dinner",
+        "calories": 120,
+        "macronutrients": {"protein": 8, "carbs": 8, "fat": 5},
+        "micronutrients": {"sodium": 800}
+      }
+    ],
+    "water_intake_ml": 1200,
+    "sleep_hours": 4.0,
+    "exercise_minutes": 0,
+    "stress_level": 9,
+    "notes": "Feeling very unwell. Suspect iron deficiency based on symptoms. Should see doctor soon."
+  }
+]

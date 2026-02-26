@@ -1,0 +1,57 @@
+# Pipeline Configuration - Default Settings
+# Diet Insight Engine Pipeline Configuration
+
+# Core pipeline settings
+pipeline:
+  name: "diet"
+  version: "1.0.0"
+
+  # Processing configuration
+  processing:
+    batch_size: 10
+    max_retries: 3
+    timeout_seconds: 300
+    confidence_threshold: 0.7
+    use_real_llm: true  # Set to true to use actual LLM instead of mock processing
+
+  # Feature toggles
+  features:
+    include_herbal_supplements: true
+    include_nutritional_supplements: true
+    deep_historical_analysis: true
+    confidence_validation: true
+
+# LangSmith Tracing Configuration
+langsmith:
+  enabled: false  # Set to true to enable LangSmith tracing
+  api_key: null   # Set API key or use LANGCHAIN_API_KEY environment variable
+  project_suffix: "pipeline"  # Will create projects like "diet-insight-engine-sss-pipeline"
+
+  # Analysis settings
+  analysis:
+    lookback_days: 90
+    min_entries_for_pattern: 3
+    symptom_correlation_threshold: 0.6
+    priority_filter_enabled: false
+    analysis_depth: "comprehensive"  # options: basic, standard, comprehensive
+
+  # Database configuration
+  database:
+    connection_timeout: 30
+    query_timeout: 60
+    max_entries_per_query: 100
+    enable_indexing: true
+
+# LLM execution parameters
+llm_execution:
+  max_tokens: 2000
+  temperature: 0.3
+  retry_attempts: 3
+  timeout_seconds: 120
+
+# Validation settings
+validation:
+  strict_schema_validation: true
+  confidence_score_required: true
+  min_parsing_confidence: 0.6
+  max_processing_attempts: 3

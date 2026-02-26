@@ -1,0 +1,32 @@
+# Prompts config group for LLM
+# Use Hydra's config group mechanism to include all prompt modules
+# LLM Configuration - Diet Insight Engine
+# Centralized model configuration for all pipeline stages
+
+# Default model for all stages
+model: "deepseek/deepseek-chat-v3-0324:free"
+provider: "openrouter"
+
+# Global LLM parameters
+parameters:
+  temperature: 0.1
+  max_tokens: 4000
+  request_timeout: 60
+  max_retries: 3
+  cost_optimization:
+    prefer_free_models: true
+    token_limit_per_request: 4000
+    daily_token_limit: 100000
+
+
+# OpenRouter configuration (import as mapping)
+openrouter:
+  # Use modular import
+  _target_: diet.utils.config_manager.load_yaml_config
+  path: llm/openrouter.yaml
+
+# OpenAI configuration (import as mapping)
+openai:
+  _target_: diet.utils.config_manager.load_yaml_config
+  path: llm/openai.yaml
+

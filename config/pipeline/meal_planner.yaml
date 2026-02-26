@@ -1,0 +1,86 @@
+# Meal Planner Pipeline Configuration
+# Configuration for the incremental dietary planning workflow
+
+meal_planner:
+  name: "meal_planner_agent"
+  version: "1.0.0"
+
+  # Planning defaults
+  planning:
+    default_plan_days: 7
+    max_plan_days: 30
+    default_meals_per_day: 4
+    include_snacks: true
+
+  # Meal slot distribution (percentage of daily calories)
+  slot_distribution:
+    breakfast: 0.25
+    morning_snack: 0.10
+    lunch: 0.30
+    afternoon_snack: 0.10
+    dinner: 0.25
+
+  # Optimization weights
+  optimization:
+    nutritional_weight: 0.5
+    preference_weight: 0.3
+    cognitive_weight: 0.2
+    variety_weight: 0.3
+
+  # Scoring thresholds
+  scoring:
+    min_meal_score: 0.6
+    calorie_variance_pct: 0.20  # Allow 20% variance from target
+    protein_variance_pct: 0.15
+
+  # Feature toggles
+  features:
+    enable_cognitive_optimization: true
+    enable_budget_optimization: true
+    enable_variety_scoring: true
+    enable_llm_refinement: false
+
+  # Macro targets by goal (multipliers on base TDEE)
+  goal_adjustments:
+    maintenance: 1.0
+    weight_loss: 0.8
+    weight_gain: 1.15
+    muscle_building: 1.1
+    cognitive_enhancement: 1.0
+    therapeutic: 1.0
+
+  # Protein targets (g per kg body weight)
+  protein_targets:
+    sedentary: 0.8
+    lightly_active: 1.0
+    moderately_active: 1.2
+    very_active: 1.6
+    extremely_active: 2.0
+
+  # Cognitive nutrient targets
+  cognitive_nutrients:
+    omega_3_g: 3.0
+    choline_mg: 550
+    vitamin_d_iu: 2000
+    b12_mcg: 2.4
+    folate_mcg: 400
+    magnesium_mg: 400
+
+# LLM configuration for plan refinement (if enabled)
+llm:
+  use_for_optimization: false
+  model_override: null
+  temperature: 0.3
+  max_tokens: 2000
+
+# Provider integration
+providers:
+  cache_menus: true
+  cache_ttl_seconds: 3600
+  default_provider_ids: []
+
+# Validation
+validation:
+  strict_allergen_check: true
+  require_complete_macros: true
+  min_meals_per_day: 3

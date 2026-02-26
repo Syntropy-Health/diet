@@ -1,0 +1,24 @@
+# OpenAI Provider Configuration
+# This config defines OpenAI-specific settings
+
+provider: "openai"
+model: "gpt-4"
+base_url: "https://api.openai.com/v1"
+temperature: 0.1
+max_tokens: 4000
+request_timeout: 60
+max_retries: 3
+
+# API key loaded from OPENAI_API_KEY environment variable
+
+# Model variants for different use cases
+models:
+  fast: "gpt-3.5-turbo"
+  standard: "gpt-4"
+  advanced: "gpt-4-turbo"
+
+# Cost management
+cost_optimization:
+  prefer_cheaper_models: false
+  token_limit_per_request: 4000
+  daily_token_limit: 200000

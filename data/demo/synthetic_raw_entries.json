@@ -1,0 +1,20 @@
+[
+  {
+    "id": "syn_raw_004",
+    "user_id": "demo_user_12345",
+    "timestamp": "2024-12-20T11:30:00",
+    "raw_content": "My mood has been really low lately and I've been feeling more anxious than usual. My bones and muscles ache, especially in my back and legs. It's been cloudy and rainy for weeks so I haven't gotten much sun. Energy is still low but slightly better than before. Had salmon and sweet potato for dinner which was good. Sleep: 7 hours. Exercise: 25 minutes walking outside. Stress: 7/10. Overall wellness: 4/10",
+    "processed": false,
+    "processing_attempts": 0,
+    "processing_errors": []
+  },
+  {
+    "id": "syn_raw_005",
+    "user_id": "demo_user_12345",
+    "timestamp": "2024-12-21T12:45:00",
+    "raw_content": "Today was rough. The fatigue is still there along with brain fog - I had trouble concentrating at work. My hands and feet felt cold even though it wasn't that cold outside. Had restless leg syndrome last night which kept me up. For food: eggs and toast for breakfast, salad with chickpeas for lunch, and fish with vegetables for dinner. Took my multivitamin. Sleep: only 5 hours due to restless legs. No exercise - too tired. Stress: 8/10. Overall wellness: 3/10",
+    "processed": false,
+    "processing_attempts": 0,
+    "processing_errors": []
+  }
+]

@@ -1,0 +1,50 @@
+# Pipeline Configuration - Demo/Testing Settings
+# Simplified configuration for demo and testing
+
+# Core pipeline settings
+pipeline:
+  name: "symptom_diet_solver"
+  version: "1.0.0"
+
+  # Processing configuration
+  processing:
+    batch_size: 5
+    max_retries: 2
+    timeout_seconds: 180
+    confidence_threshold: 0.5
+
+  # Feature toggles - simplified for demo
+  features:
+    include_herbal_supplements: false
+    include_nutritional_supplements: true
+    deep_historical_analysis: false
+    confidence_validation: true
+
+  # Analysis settings - lighter for demo
+  analysis:
+    lookback_days: 30
+    min_entries_for_pattern: 2
+    symptom_correlation_threshold: 0.5
+    priority_filter_enabled: true
+    analysis_depth: "standard"  # options: basic, standard, comprehensive
+
+  # Database configuration
+  database:
+    connection_timeout: 15
+    query_timeout: 30
+    max_entries_per_query: 50
+    enable_indexing: false
+
+# LLM execution parameters - optimized for demo
+llm_execution:
+  max_tokens: 1500
+  temperature: 0.2
+  retry_attempts: 2
+  timeout_seconds: 90
+
+# Validation settings - relaxed for demo
+validation:
+  strict_schema_validation: false
+  confidence_score_required: false
+  min_parsing_confidence: 0.4
+  max_processing_attempts: 2

@@ -1,0 +1,4 @@
+defaults:
+  - prompts/symptom_diet_solver
+  - prompts/amazon_store_agent
+  - _self_

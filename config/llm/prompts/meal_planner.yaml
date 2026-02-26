@@ -1,0 +1,105 @@
+# Meal Planner LLM Prompts Configuration
+# Prompts used for LLM-enhanced meal planning (when enabled)
+
+prompts:
+  meal_planner:
+    # System prompt for plan refinement
+    system_prompt: |
+      You are an expert nutritionist and meal planning specialist for SyntropyHealth.
+      Your role is to optimize meal plans for health, cognitive performance, and user preferences.
+
+      Guidelines:
+      - Always prioritize food safety (respect allergies and restrictions)
+      - Consider nutritional balance across the full day
+      - Optimize for cognitive enhancement when requested
+      - Ensure meal variety to prevent monotony
+      - Consider practical factors (prep time, availability)
+
+      Output your recommendations in structured JSON format.
+
+    # Profile analysis prompt
+    profile_analysis: |
+      Analyze the following user profile and compute optimal nutritional targets:
+
+      User Profile:
+      {profile_json}
+
+      Recent Health Logs:
+      {health_logs_json}
+
+      Past Diet:
+      {past_diet_json}
+
+      Compute:
+      1. Daily calorie target (considering goal: {dietary_goal})
+      2. Macro distribution (protein, carbs, fat in grams)
+      3. Key micronutrient priorities based on health logs
+      4. Meal timing recommendations based on lifestyle
+      5. Foods to emphasize or avoid
+
+      Return as JSON with keys: calorie_target, macros, micronutrient_priorities,
+      meal_timing, emphasize_foods, avoid_foods, notes
+
+    # Menu correlation prompt
+    menu_correlation: |
+      Score the following meals for the user's nutritional needs:
+
+      Nutritional Targets:
+      {targets_json}
+
+      User Preferences:
+      {preferences_json}
+
+      Available Meals:
+      {meals_json}
+
+      For each meal, provide:
+      1. Nutritional alignment score (0-1)
+      2. Preference match score (0-1)
+      3. Cognitive benefit score (0-1) if user has cognitive goals
+      4. Brief reasoning
+
+      Return as JSON array of: meal_id, scores, reasoning
+
+    # Plan optimization prompt
+    plan_optimization: |
+      Review and optimize the following meal plan:
+
+      Current Plan:
+      {plan_json}
+
+      User Profile:
+      {profile_json}
+
+      Optimization Goals:
+      - Ensure nutritional balance across all days
+      - Maximize variety (avoid repeating meals too often)
+      - Align with cognitive goals: {cognitive_goals}
+      - Stay within budget: {budget_constraint}
+
+      Suggest:
+      1. Meal swaps for better nutritional balance
+      2. Supplement recommendations to fill gaps
+      3. Timing adjustments for cognitive optimization
+      4. General dietary advice
+
+      Return as JSON with: suggested_swaps, supplements, timing_notes, advice
+
+    # Cognitive enhancement prompt
+    cognitive_enhancement: |
+      Optimize meal selection for cognitive performance:
+
+      Cognitive Goals: {cognitive_goals}
+
+      Available Meals:
+      {meals_json}
+
+      For cognitive optimization, prioritize meals containing:
+      - Omega-3 fatty acids (salmon, walnuts, flax)
+      - Choline (eggs, liver, soybeans)
+      - Antioxidants (berries, leafy greens)
+      - Complex carbs for sustained energy
+      - B-vitamins for neurotransmitter synthesis
+
+      Score each meal's cognitive benefit and explain the reasoning.
+      Return as JSON: meal_id, cognitive_score, key_nutrients, explanation

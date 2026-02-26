@@ -1,0 +1,47 @@
+[
+  {
+    "id": "raw_001",
+    "user_id": "demo_user_123",
+    "timestamp": "2025-06-18T08:30:00Z",
+    "raw_content": "Woke up feeling really tired again today. Had a headache behind my eyes and felt dizzy when I stood up. Yesterday I had eggs and toast for breakfast, but skipped lunch because I wasn't feeling well. For dinner I had pasta with tomato sauce. I've been having trouble sleeping - only got about 5 hours last night. My stress level feels really high lately, about an 8 out of 10. I drank maybe 2 glasses of water all day which I know isn't enough. My overall wellness today feels like a 4 out of 10.",
+    "processed": false,
+    "processing_attempts": 0,
+    "processing_errors": []
+  },
+  {
+    "id": "raw_002", 
+    "user_id": "demo_user_123",
+    "timestamp": "2025-06-17T09:15:00Z",
+    "raw_content": "Feeling much better today! Had a green smoothie with spinach, banana, and protein powder for breakfast. Went for a 30 minute walk in the morning which felt great. For lunch I had a large salad with chicken, avocado, and lots of vegetables. Drank about 8 glasses of water throughout the day. Slept 7.5 hours and feel well rested. Stress level is much lower, around a 3. Energy levels are good and I feel like my overall wellness is about 8 out of 10 today.",
+    "processed": false,
+    "processing_attempts": 0,
+    "processing_errors": []
+  },
+  {
+    "id": "raw_003",
+    "user_id": "demo_user_123", 
+    "timestamp": "2025-06-16T19:45:00Z",
+    "raw_content": "Not a great day health-wise. Woke up with severe fatigue and muscle aches all over my body. Had coffee and a bagel for breakfast but felt nauseous afterwards. Skipped lunch entirely because my stomach was upset. For dinner I managed to eat some chicken soup and crackers. I've been getting pale lately and my fingernails look brittle. Also noticed my hair has been falling out more than usual. Couldn't exercise today because I felt too weak. Only slept 4 hours last night due to anxiety. Stress is very high at 9/10. Drank maybe 4 glasses of water. Overall wellness feels like 2/10.",
+    "processed": false,
+    "processing_attempts": 0, 
+    "processing_errors": []
+  },
+  {
+    "id": "raw_004",
+    "user_id": "demo_user_123",
+    "timestamp": "2025-06-15T07:20:00Z", 
+    "raw_content": "Mixed day today. Started with oatmeal and berries for breakfast which gave me steady energy. Had restless leg syndrome last night which kept me up - only got 5.5 hours of sleep. During lunch I had a turkey sandwich and noticed I'm craving ice a lot lately, which is weird. Did 20 minutes of yoga in the evening which helped my mood. Been having some digestive issues and loose stools for the past few days. My concentration has been poor and I feel mentally foggy. Drank about 6 glasses of water. Stress level around 6/10. Overall wellness about 5/10 today.",
+    "processed": false,
+    "processing_attempts": 0,
+    "processing_errors": []
+  },
+  {
+    "id": "raw_005",
+    "user_id": "demo_user_123",
+    "timestamp": "2025-06-14T11:30:00Z",
+    "raw_content": "Really good day! Had a nutritious breakfast with eggs, spinach, and whole grain toast. Managed to get 8 hours of sleep last night and woke up feeling refreshed. Went to the gym for 45 minutes of strength training which felt amazing. For lunch had quinoa bowl with vegetables and lean protein. My energy levels are high and I feel mentally sharp. Stress is low at 2/10. Been taking my vitamin D supplement daily and I think it's helping. Drank 10 glasses of water today. No symptoms or issues to report. Overall wellness feels like 9/10!",
+    "processed": false,
+    "processing_attempts": 0,
+    "processing_errors": []
+  }
+]
